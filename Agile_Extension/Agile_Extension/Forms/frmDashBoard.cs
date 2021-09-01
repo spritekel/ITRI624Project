@@ -7,14 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroSet_UI.Forms;
 
 namespace Agile_Extension
 {
-    public partial class Form1 : Form
+    public partial class frmDashBoard : MetroSetForm
     {
-        public Form1()
+        public frmDashBoard()
         {
             InitializeComponent();
+        }
+
+        private void tpProject1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDashBoard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
