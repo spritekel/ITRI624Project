@@ -33,6 +33,7 @@ namespace Agile_Extension
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.tpProject2 = new MetroSet_UI.Child.MetroSetTabPage();
             this.tpProject1 = new MetroSet_UI.Child.MetroSetTabPage();
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.elpVoiceChat = new MetroSet_UI.Controls.MetroSetEllipse();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbAgendaItems = new MetroSet_UI.Controls.MetroSetListBox();
@@ -41,7 +42,6 @@ namespace Agile_Extension
             this.tileSprint2 = new MetroSet_UI.Controls.MetroSetTile();
             this.tileSprint1 = new MetroSet_UI.Controls.MetroSetTile();
             this.tbProjects = new MetroSet_UI.Controls.MetroSetTabControl();
-            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.tpProject1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tbProjects.SuspendLayout();
@@ -118,6 +118,38 @@ namespace Agile_Extension
             this.tpProject1.ThemeName = "MetroLite";
             this.tpProject1.ToolTipText = null;
             this.tpProject1.Click += new System.EventHandler(this.tpProject1_Click);
+            // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.Silver;
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBar1.InnerMargin = 2;
+            this.circularProgressBar1.InnerWidth = -1;
+            this.circularProgressBar1.Location = new System.Drawing.Point(238, 241);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Silver;
+            this.circularProgressBar1.OuterMargin = -25;
+            this.circularProgressBar1.OuterWidth = 20;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.circularProgressBar1.ProgressWidth = 19;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.circularProgressBar1.Size = new System.Drawing.Size(191, 163);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar1.SubscriptText = "65";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptText = "%";
+            this.circularProgressBar1.TabIndex = 6;
+            this.circularProgressBar1.Text = "Progress";
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar1.Value = 68;
             // 
             // elpVoiceChat
             // 
@@ -300,38 +332,6 @@ namespace Agile_Extension
             this.tbProjects.ThemeAuthor = "Narwin";
             this.tbProjects.ThemeName = "MetroLite";
             this.tbProjects.UseAnimation = true;
-            // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar1.AnimationSpeed = 500;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.Silver;
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.circularProgressBar1.InnerMargin = 2;
-            this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(238, 241);
-            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.Silver;
-            this.circularProgressBar1.OuterMargin = -25;
-            this.circularProgressBar1.OuterWidth = 20;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.circularProgressBar1.ProgressWidth = 19;
-            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.circularProgressBar1.Size = new System.Drawing.Size(191, 163);
-            this.circularProgressBar1.StartAngle = 270;
-            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBar1.SubscriptText = "65";
-            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBar1.SuperscriptText = "%";
-            this.circularProgressBar1.TabIndex = 6;
-            this.circularProgressBar1.Text = "Progress";
-            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar1.Value = 68;
             // 
             // frmDashBoard
             // 
