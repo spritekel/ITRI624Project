@@ -41,7 +41,7 @@ namespace Agile_Extension
             this.tileSprint2 = new MetroSet_UI.Controls.MetroSetTile();
             this.tileSprint1 = new MetroSet_UI.Controls.MetroSetTile();
             this.tbProjects = new MetroSet_UI.Controls.MetroSetTabControl();
-            this.pbCompletion = new MetroSet_UI.Controls.MetroSetProgressBar();
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.tpProject1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tbProjects.SuspendLayout();
@@ -99,7 +99,7 @@ namespace Agile_Extension
             // tpProject1
             // 
             this.tpProject1.BaseColor = System.Drawing.Color.White;
-            this.tpProject1.Controls.Add(this.pbCompletion);
+            this.tpProject1.Controls.Add(this.circularProgressBar1);
             this.tpProject1.Controls.Add(this.elpVoiceChat);
             this.tpProject1.Controls.Add(this.panel1);
             this.tpProject1.Controls.Add(this.tileSprint3);
@@ -301,33 +301,42 @@ namespace Agile_Extension
             this.tbProjects.ThemeName = "MetroLite";
             this.tbProjects.UseAnimation = true;
             // 
-            // pbCompletion
+            // circularProgressBar1
             // 
-            this.pbCompletion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.pbCompletion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.pbCompletion.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.pbCompletion.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.pbCompletion.DisabledProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.pbCompletion.Location = new System.Drawing.Point(3, 114);
-            this.pbCompletion.Maximum = 100;
-            this.pbCompletion.Minimum = 0;
-            this.pbCompletion.Name = "pbCompletion";
-            this.pbCompletion.Orientation = MetroSet_UI.Enums.ProgressOrientation.Horizontal;
-            this.pbCompletion.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.pbCompletion.Size = new System.Drawing.Size(908, 36);
-            this.pbCompletion.Style = MetroSet_UI.Design.Style.Light;
-            this.pbCompletion.StyleManager = null;
-            this.pbCompletion.TabIndex = 5;
-            this.pbCompletion.Tag = "";
-            this.pbCompletion.Text = "Project Status";
-            this.pbCompletion.ThemeAuthor = "Narwin";
-            this.pbCompletion.ThemeName = "MetroLite";
-            this.pbCompletion.Value = 30;
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.Silver;
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBar1.InnerMargin = 2;
+            this.circularProgressBar1.InnerWidth = -1;
+            this.circularProgressBar1.Location = new System.Drawing.Point(238, 241);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Silver;
+            this.circularProgressBar1.OuterMargin = -25;
+            this.circularProgressBar1.OuterWidth = 20;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.circularProgressBar1.ProgressWidth = 19;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.circularProgressBar1.Size = new System.Drawing.Size(191, 163);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar1.SubscriptText = "65";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptText = "%";
+            this.circularProgressBar1.TabIndex = 6;
+            this.circularProgressBar1.Text = "Progress";
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar1.Value = 68;
             // 
             // frmDashBoard
             // 
             this.AllowResize = false;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 575);
             this.Controls.Add(this.tbProjects);
@@ -357,7 +366,7 @@ namespace Agile_Extension
         private MetroSet_UI.Controls.MetroSetLabel lblUpcoming;
         private MetroSet_UI.Controls.MetroSetEllipse elpVoiceChat;
         private MetroSet_UI.Controls.MetroSetListBox lbAgendaItems;
-        private MetroSet_UI.Controls.MetroSetProgressBar pbCompletion;
+        private CircularProgressBar.CircularProgressBar circularProgressBar1;
     }
 }
 
