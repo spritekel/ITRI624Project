@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Agile_Extension.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Agile_Extension
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDashBoard());
+            Application.Run(new Login());
         }
     }
 }
